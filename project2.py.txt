@@ -1,0 +1,23 @@
+# Online Python compiler (interpreter) to run Python online.
+# Write Python 3 code in this online editor and run it.amiz.pro")
+def count_words(text):
+    # Split the text into words using space as a delimiter
+    words = text.split()
+    return len(words)
+
+def main():
+    # Prompt the user to enter a sentence or paragraph
+    user_input = input("Please enter a sentence or paragraph: ").strip()
+    
+    # Error handling: Check if the input is empty
+    if not user_input:
+        print("You entered an empty string. Please try again.")
+    else:
+        # Count the number of words in the input
+        word_count = count_words(user_input)
+        
+        # Display the word count to the user
+        print(f"The number of words in the input text is: {word_count}")
+
+if __name__ == "__main__":
+    main()
